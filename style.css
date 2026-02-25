@@ -47,12 +47,54 @@ nav {
     width: 197px;
     height: 50px;
     border-radius: 12px;
+    padding: 10px;
 }
 
+/* Header Section  */
+header {
+    width: 1158.61px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.header-title {
+    color: black;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.header-description {
+    color: black;
+    width: 640px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.enroll-btn {
+    color: #FFFFFF;
+    background-color: black;
+    border: 0;
+    padding: 10px;
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+}
 
 /* Responsive  */
 /* samll device  */
 @media screen and (max-width: 480px) {
+
+    /* navbar  */
     nav {
         flex-direction: column;
     }
@@ -64,11 +106,76 @@ nav {
     .nav-contact-btn button {
         text-align: center;
     }
+
+    /* Header  */
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header-banner {
+        order: 1;
+    }
+
+    .header-content {
+        order: 2;
+        gap: 20px;
+    }
+
+    .enroll-btn {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+    .header-description {
+        text-align: center;
+        width: 300px;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 auto;
+    }
+
+    .header-banner img {
+        width: 300px;
+
+    }
 }
+
+
 
 /* mobile device  */
 @media screen and (max-width: 768px) {
+
+    /* navbar  */
     nav {
         flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header-title {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .header-description {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .header-banner img {
+        width: 336px;
     }
 }
+
+/* Tablet  */
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {}
