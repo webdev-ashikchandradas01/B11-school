@@ -90,6 +90,72 @@ header {
     border-radius: 12px;
 }
 
+/* main style  */
+main {}
+
+/* Curriculum section style  */
+
+.curriculum {
+    background-image: url(assets/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1160px;
+    margin: 60px auto;
+
+}
+
+.curriculum-section-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+}
+
+.curriculum-items {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    margin-top: 80px;
+}
+
+.curriculum-item {
+    width: 367px;
+    height: 400px;
+    border-radius: 18.86px;
+    padding: 20px;
+}
+
+.curriculum-item img {
+    width: 136px;
+    display: block;
+    margin: 0 auto;
+}
+
+.curriculum-item-title {
+    color: #202020;
+    font-weight: 700;
+    font-size: 24.52px;
+    text-align: center;
+}
+
+.curriculum-item-description {
+    font-family: Raleway;
+    color: #808080;
+    font-weight: 500;
+    font-size: 15.09px;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.read-more-btn {
+    font-weight: 700;
+    font-size: 15.09px;
+    text-align: center;
+    margin-top: 38px;
+}
+
 /* Responsive  */
 /* samll device  */
 @media screen and (max-width: 480px) {
@@ -148,7 +214,33 @@ header {
         width: 300px;
 
     }
+
+    /* .curriculum  */
+    .curriculum {
+        width: 100%;
+
+    }
+
+    .curriculum-section-title {
+        font-size: 26px;
+    }
+
+    .curriculum-items {
+        flex-direction: column;
+    }
+
+    .curriculum-item {
+        width: 320px;
+        height: 320px;
+        padding: 10px;
+    }
+
+    .curriculum-item img {
+        width: 92px;
+    }
 }
+
+
 
 
 
@@ -174,8 +266,24 @@ header {
     .header-banner img {
         width: 336px;
     }
+
+    .curriculum-item-title {
+        font-size: 16.6px;
+    }
+
+    .curriculum-item-description {
+        font-size: 10.22px;
+    }
+
+    .read-more-btn {
+        font-size: 10.22px;
+    }
 }
 
 /* Tablet  */
 
-@media screen and (min-width: 780px) and (max-width: 1024px) {}
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+    nav {
+        width: 100%;
+    }
+}
