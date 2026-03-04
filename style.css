@@ -1,5 +1,7 @@
 body {
     font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -91,7 +93,6 @@ header {
 }
 
 /* main style  */
-main {}
 
 /* Curriculum section style  */
 
@@ -156,7 +157,150 @@ main {}
     margin-top: 38px;
 }
 
+/* Our Stories section  */
+.our-stories {
+    background:
+        linear-gradient(to top, #fea1014b 0%, #FFFFFF 100%), url(assets/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.sotries-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.story-title {
+    color: #000000;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-item {
+    width: 540px;
+    height: 630px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.main-item-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-item-banner img {
+    width: 100%;
+    display: block;
+    border-radius: 16px 16px 0 0;
+}
+
+.main-item-date {
+    background-color: #3CD8E8;
+    width: 174.51px;
+    height: 47.93px;
+    border: 0;
+    border-radius: 47.93px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    /* inside image */
+    left: 20px;
+
+}
+
+
+
+.main-item-date-content {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15.34px;
+    margin: 0 auto;
+}
+
+.main-item-title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    /* text-align: center; */
+    width: 420px;
+    padding-left: 20px;
+}
+
+.main-item-descripsion {
+    color: #666666;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15.34px;
+    width: 400px;
+    padding-left: 20px;
+
+}
+
+/* Sub items  */
+.sub-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.sub-item {
+    width: 290px;
+    height: 301px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 16px;
+}
+
+.sub-item-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-item-banner img {
+    display: block;
+    border-radius: 16px 16px 0 0;
+}
+
+.sub-item-date {
+    background-color: #95B226;
+    border: 0;
+    border-radius: 47.93px;
+    width: 150px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
+
+.sub-item-date-content {
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.sub-item-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
 /* Responsive  */
+
+
+
 /* samll device  */
 @media screen and (max-width: 480px) {
 
@@ -237,6 +381,57 @@ main {}
 
     .curriculum-item img {
         width: 92px;
+    }
+
+    /* Our Stories  */
+
+    .sotries-items {
+        flex-direction: column;
+    }
+
+    .main-item {
+        width: 350px;
+    }
+
+    .main-item-banner img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .main-item-title {
+        width: 300px;
+        font-size: 24px;
+    }
+
+    .main-item-descripsion {
+        width: 300px;
+    }
+
+    .sub-items {
+        gap: 10px;
+    }
+
+    .sub-item {
+        width: 170px;
+        height: 170px;
+    }
+
+    .sub-item-banner img {
+        width: 100%;
+    }
+
+    .sub-item-date {
+        width: 100px;
+    }
+
+    .sub-item-date-content {
+        font-size: 9.13px;
+        font-weight: 500;
+    }
+
+    .sub-item-title {
+        width: 117px;
+        font-size: 9.13px;
     }
 }
 
