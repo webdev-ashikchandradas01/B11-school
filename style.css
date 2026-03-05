@@ -164,7 +164,7 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
+    padding: 80px 0;
 }
 
 .sotries-items {
@@ -179,6 +179,7 @@ header {
     font-size: 46px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .main-item {
@@ -297,188 +298,157 @@ header {
     padding-left: 20px;
 }
 
+footer {
+    background: #01ACFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+}
+
+.footer-band {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-band-title {
+    font-weight: 700;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+.footer-header-descripsion {
+    width: 399px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer-nav-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.footer-nav-item {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer-contact-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+}
+
 /* Responsive  */
 
 
 
-/* samll device  */
 @media screen and (max-width: 480px) {
 
-    /* navbar  */
+    /* NAV */
     nav {
         flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
     }
 
     .nav-item {
         flex-direction: column;
+        gap: 15px;
     }
 
     .nav-contact-btn button {
-        text-align: center;
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
     }
 
-    /* Header  */
-
+    /* HEADER */
     header {
         width: 100%;
         flex-direction: column;
-        padding: 0;
-    }
-
-    .header-banner {
-        order: 1;
-    }
-
-    .header-content {
-        order: 2;
-        gap: 20px;
-    }
-
-    .enroll-btn {
         text-align: center;
-        margin: 0 auto;
-    }
-
-    .header-title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 32px;
-        margin: 0 auto;
-    }
-
-    .header-description {
-        text-align: center;
-        width: 300px;
-        font-size: 14px;
-        font-weight: 500;
-        margin: 0 auto;
+        padding: 20px;
     }
 
     .header-banner img {
-        width: 300px;
-
+        width: 100%;
+        max-width: 320px;
     }
 
-    /* .curriculum  */
+    .header-title {
+        font-size: 28px;
+    }
+
+    .header-description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .enroll-btn {
+        margin: 0 auto;
+        width: 160px;
+        height: 45px;
+    }
+
+    /* CURRICULUM */
     .curriculum {
         width: 100%;
-
-    }
-
-    .curriculum-section-title {
-        font-size: 26px;
+        margin: 40px auto;
+        padding: 0 15px;
     }
 
     .curriculum-items {
         flex-direction: column;
+        gap: 20px;
     }
 
     .curriculum-item {
-        width: 320px;
-        height: 320px;
-        padding: 10px;
+        width: 100%;
+        height: auto;
     }
 
-    .curriculum-item img {
-        width: 92px;
+    /* OUR STORIES */
+    .our-stories {
+        padding: 40px 15px;
+        min-height: auto;
     }
-
-    /* Our Stories  */
 
     .sotries-items {
         flex-direction: column;
+        gap: 20px;
     }
 
     .main-item {
-        width: 350px;
-    }
-
-    .main-item-banner img {
         width: 100%;
-        height: 300px;
+        height: auto;
     }
 
-    .main-item-title {
-        width: 300px;
-        font-size: 24px;
-    }
-
+    .main-item-title,
     .main-item-descripsion {
-        width: 300px;
+        width: 90%;
     }
 
     .sub-items {
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .sub-item {
-        width: 170px;
-        height: 170px;
-    }
-
-    .sub-item-banner img {
         width: 100%;
+        height: auto;
     }
 
-    .sub-item-date {
-        width: 100px;
-    }
-
-    .sub-item-date-content {
-        font-size: 9.13px;
-        font-weight: 500;
-    }
-
-    .sub-item-title {
-        width: 117px;
-        font-size: 9.13px;
-    }
-}
-
-
-
-
-
-/* mobile device  */
-@media screen and (max-width: 768px) {
-
-    /* navbar  */
-    nav {
+    /* FOOTER */
+    footer {
         flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .header-title {
-        font-weight: 700;
-        font-size: 32px;
-    }
-
-    .header-description {
-        font-weight: 500;
-        font-size: 14px;
-    }
-
-    .header-banner img {
-        width: 336px;
-    }
-
-    .curriculum-item-title {
-        font-size: 16.6px;
-    }
-
-    .curriculum-item-description {
-        font-size: 10.22px;
-    }
-
-    .read-more-btn {
-        font-size: 10.22px;
-    }
-}
-
-/* Tablet  */
-
-@media screen and (min-width: 780px) and (max-width: 1024px) {
-    nav {
-        width: 100%;
+        gap: 30px;
+        padding: 40px 20px;
+        text-align: center;
     }
 }
